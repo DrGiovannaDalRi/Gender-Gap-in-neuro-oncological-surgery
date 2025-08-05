@@ -9,8 +9,8 @@ from dateutil.relativedelta import relativedelta
 #SETTING UP
 
 # Set up the Entrez API keys and email address
-Entrez.email = "luca.mascaro00@gmail.com"
-Entrez.api_key = "85a0c7eeaa15bb56735b36487500a96b3208"
+Entrez.email = "example@gmail.com"
+Entrez.api_key = "exampleAPI"
 
 # Set up the gender detector (from Gender-guesser)
 gd = gender.Detector()
@@ -215,4 +215,5 @@ for row in data:
     wsStatistics.append(row)
 
 # Save the Excel file
+
 wbStatistics.save(nameExcelStatistics)
